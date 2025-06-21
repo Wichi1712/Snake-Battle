@@ -33,6 +33,8 @@ estado "jugando" ==&gt; Juego en ejecucion
 estado "GameOver" ==&gt; Fin de juego
 */
 
+window_set_fullscreen(true);
+
 //Variables de juego
 global.estado = "menuInicio";
 global.gamescore = 0;

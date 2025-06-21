@@ -121,12 +121,19 @@ if(Pausa)
     //draw_text( view_wview[0]/2, view_hview[0]/2, string_upper("pausa"));//solo cuando usamos view
     
     
-    draw_text_ext_transformed_color(view_wview[0]/2, view_hview[0]/2 - 240, string_upper("snake battle"),20, 200, 3.5, 2.5, 0, c_yellow, c_yellow, c_orange, c_orange, 1);   
+    draw_text_ext_transformed_color(view_wview[0]/2, view_hview[0]/2 - 320, string_upper("snake battle"),20, 200, 3.5, 2.5, 0, c_yellow, c_yellow, c_orange, c_orange, 1);
+    draw_text(view_wview[0]/2, view_hview[0]/2 - 250, string_upper("Menu de pausa"));
     draw_text(view_wview[0]/2, view_hview[0]/2 - 200, string_upper("seleccione opciones"));
-    //draw_line_color ( view_wview[0]/2, view_hview[0]/2, view_wview[0]/2, view_hview[0]/2 + 200,c_yellow, c_white );
-    //draw_line_color ( view_wview[0]/2, view_hview[0]/2, view_wview[0]/2 + 200, view_hview[0]/2,c_yellow, c_white );  
-    draw_highscore( view_wview[0]/2 - 100 , view_hview[0]/2 -150, view_wview[0]/2 + 100, view_hview[0]/2 + 200);  
-    draw_text(view_wview[0]/2, view_hview[0]/2 + 250, string_upper("presione ESCAPE para empezar"));
+    draw_line_color(100, view_hview[0]/2-180, view_wview[0] - 100, view_hview[0]/2-180,c_yellow, c_white );//linea horizontal
+    
+    //Selector de opciomes
+    draw_text(view_wview[0]/3+40, view_hview[0]/2 - 100,"&gt;&gt;");
+    draw_text(view_wview[0]/3+100, view_hview[0]/2 - 100, string_upper("Menu"));
+    draw_text(view_wview[0]/3+100, view_hview[0]/2 - 50, string_upper("Salir"));
+    draw_line_color(view_wview[0]/2, view_hview[0]/2-140, view_wview[0]/2, view_hview[0]/2 + 200,c_yellow, c_white );//linea vetical
+    
+    draw_highscore(view_wview[0]/2 + 100 , view_hview[0]/2 -150, view_wview[0]/2 + 200, view_hview[0]/2 + 200);  
+    draw_text(view_wview[0]/2, view_hview[0]/2 + 280, string_upper("presione ESCAPE para continuar"));
 }
 </string>
           </argument>
